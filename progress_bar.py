@@ -1,7 +1,7 @@
 #A progress bar function I made for CLI while working on some web scraping.
 
 #pre: Iterable function calls this per-iteration
-#post: progress bar is returned with percentage  
+#post: progress bar is returned with percentage. Console is cleared  
 def progress_bar (current, total, length, message):
     percentage = current / total
     current_length = math.floor(length * percentage)
